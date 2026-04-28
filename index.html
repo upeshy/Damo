@@ -1,0 +1,249 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepak Dry Cleaners</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f4f7fb;color:#222;}
+
+/* HEADER COMPACT */
+header {
+position:sticky;
+top:0;
+background:linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+color:#fff;
+text-align:center;
+padding:10px;  /* reduced */
+z-index:1000;
+box-shadow:0 3px 8px rgba(0,0,0,0.3);
+}
+
+header h1{
+font-size:22px;  /* reduced */
+color:#ffd54f;
+}
+
+header p{
+font-size:12px;  /* reduced */
+color:#fff;
+}
+
+nav {margin-top:3px;}
+
+nav a {
+color:#ffd54f;
+margin:0 8px;
+text-decoration:none;
+font-size:12px;  /* reduced */
+font-weight:500;
+}
+
+nav a:hover {color:#fff;}
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1521656693074-0ef32e80a5d5') center/cover;
+height:480px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#fff;
+padding:20px;
+}
+
+.hero h2{font-size:40px;}
+.hero p{margin-top:8px;font-size:16px;}
+
+.btn{
+display:inline-block;
+margin-top:18px;
+padding:12px 26px;
+background:#ffc107;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+}
+
+/* SECTION */
+section{padding:50px 20px;text-align:center;} /* slightly reduced */
+h2{font-size:30px;margin-bottom:20px;color:#c62828;}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card img{
+width:100%;
+height:170px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:22px;
+color:#ff6f00;
+font-weight:700;
+}
+
+/* CONTACT */
+.contact{
+background:linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+color:#fff;
+}
+
+.contact a{
+color:#ffd54f;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* FOOTER COMPACT */
+footer {
+background:#0f2027;
+color:#ccc;
+text-align:center;
+padding:12px;   /* reduced */
+font-size:12px; /* reduced */
+}
+
+/* FLOAT ICON */
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.float img{
+width:48px;   /* slightly smaller */
+height:48px;
+border-radius:50%;
+}
+
+/* FORM */
+input,textarea{
+width:90%;
+max-width:500px;
+padding:12px;
+margin:8px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+padding:12px 26px;
+background:#0d0d0d;
+color:#fff;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+</style>
+</head>
+<body><header>
+<h1>DEEPAK DRY CLEANERS</h1>
+<p>World Class Laundry Steam Press & Drycleaning</p>
+<nav>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</nav>
+</header><div class="hero">
+<h2>Free Pick Up & Home Delivery</h2>
+<p>Sofa, Carpet, Blanket, Curtain, Jacket, Sherwani, Saree & More</p>
+<a href="tel:+919599819435" class="btn">Call Now</a>
+</div>
+  <section id="about">
+<h2>About Us</h2>
+
+<div class="card" style="max-width:900px;margin:auto;line-height:1.8;font-size:16px;text-align:left;border-left:5px solid #ffc107;">
+
+🧺 <b>Deepak Dry Cleaners</b> एक trusted laundry और dry cleaning service provider है जो Indirapuram, Ghaziabad और आसपास के क्षेत्रों में कई वर्षों से अपनी बेहतरीन service दे रहा है।  
+
+<br><br>
+
+हम modern machines और high-quality cleaning techniques का उपयोग करके आपके कपड़ों और household items को बिल्कुल नया जैसा बना देते हैं।  
+
+<br><br>
+
+✔ Sofa, Carpet & Curtain Cleaning  
+✔ Steam Press & Dry Cleaning  
+✔ Jacket, Sherwani, Saree Special Care  
+✔ Free Home Pickup & Delivery  
+✔ Fast & Affordable Service  
+
+<br><br>
+
+हमारा goal है कि हर customer को साफ-सुथरा, hygienic और premium quality service मिले — वो भी सही price में।
+
+</div>
+</section>
+  
+  <section id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">🛋 Sofa Cleaning</div>
+<div class="card">🧥 Jacket Dry Cleaning</div>
+<div class="card">🪟 Curtain Cleaning</div>
+<div class="card">👔 Steam Press</div>
+<div class="card">🛏 Blanket Cleaning</div>
+<div class="card">👗 Saree & Lehanga Care</div>
+</div>
+</section><section id="gallery">
+<h2>Work Gallery</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60"><p>Dry Cleaning</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c"><p>Steam Press</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64"><p>Home Pickup Service</p></div>
+</div>
+</section><section id="pricing">
+<h2>Pricing</h2>
+<div class="grid">
+<div class="card"><h3>Steam Press</h3><div class="price">₹20+</div></div>
+<div class="card"><h3>Dry Cleaning</h3><div class="price">₹99+</div></div>
+<div class="card"><h3>Sofa Cleaning</h3><div class="price">₹499+</div></div>
+</div>
+</section><section>
+<h2>Book Service</h2>
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="phone" placeholder="Phone Number">
+<textarea id="msg" placeholder="Service Required"></textarea><br>
+<button onclick="sendWhatsApp()">Book on WhatsApp</button>
+</section><section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>📞 <a href="tel:+919599819435">+91 95998 19435</a></p>
+<p>📍 Shop No. 90G, Nyay Khand-2, Near Aditya Mall, Indirapuram, Ghaziabad</p>
+</section><footer>© 2026 Deepak Dry Cleaners | All Rights Reserved</footer><div class="float">
+<a href="tel:+919599819435"><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png"></a>
+<a href="https://wa.me/919599819435"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a>
+</div><script>
+function sendWhatsApp(){
+let name=document.getElementById('name').value;
+let phone=document.getElementById('phone').value;
+let msg=document.getElementById('msg').value;
+let url=`https://wa.me/919599819435?text=Hello%20Deepak%20Dry%20Cleaners%0AName:${name}%0APhone:${phone}%0AService:${msg}`;
+window.open(url,'_blank');
+}
+</script></body>
+</html>
