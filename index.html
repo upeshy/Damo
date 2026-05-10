@@ -771,6 +771,54 @@ padding:70px 20px;
 }
 
   }
+  /* FULL IMAGE SHOW FIX */
+
+/* OLD CODE REMOVE KARO */
+/*
+object-fit:cover;
+*/
+
+/* NEW CODE ADD KARO */
+
+.card img,
+.gallery img,
+.wholesale-gallery img,
+.about img{
+width:100%;
+height:auto;
+object-fit:contain;
+background:#fff;
+}
+
+/* AGAR SAME HEIGHT CHAHIYE TO YE USE KARO */
+
+.card img{
+height:250px;
+object-fit:contain;
+padding:10px;
+background:#fff;
+}
+
+.gallery img{
+height:280px;
+object-fit:contain;
+padding:10px;
+background:#fff;
+}
+
+.wholesale-gallery img{
+height:240px;
+object-fit:contain;
+padding:10px;
+background:#fff;
+}
+
+.about img{
+height:450px;
+object-fit:contain;
+padding:10px;
+background:#fff;
+}
 </style>
 </head>
 
