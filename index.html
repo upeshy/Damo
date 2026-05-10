@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Das Babu Traders | Building Material Suppliers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#222;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#ffcc00,#f4a300);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#111;
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+color:#111;
+transition:.3s;
+}
+
+nav a:hover{
+color:white;
+}
+
+/* HERO */
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:60px 8%;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:60px;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.hero-content h2{
+font-size:30px;
+margin-bottom:20px;
+color:#ffcc00;
+}
+
+.hero-content p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.hero-buttons{
+margin-top:30px;
+}
+
+.hero-buttons a{
+display:inline-block;
+padding:14px 30px;
+margin:10px;
+text-decoration:none;
+font-weight:700;
+border-radius:10px;
+transition:.3s;
+}
+
+.btn1{
+background:#ffcc00;
+color:#111;
+}
+
+.btn1:hover{
+background:white;
+}
+
+.btn2{
+border:2px solid white;
+color:white;
+}
+
+.btn2:hover{
+background:white;
+color:#111;
+}
+
+/* SECTION */
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+font-weight:800;
+color:#222;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.card-content p{
+font-size:15px;
+line-height:1.7;
+color:#555;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about-text h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about-text p{
+line-height:1.9;
+font-size:16px;
+color:#555;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* CONTACT */
+
+.contact{
+background:#111;
+color:white;
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:18px;
+margin:10px 0;
+}
+
+.contact a{
+color:#ffcc00;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#000;
+color:#bbb;
+text-align:center;
+padding:20px;
+font-size:15px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+background:#25d366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+text-decoration:none;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+z-index:999;
+transition:.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content h2{
+font-size:22px;
+}
+
+.section-title{
+font-size:32px;
+}
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin:0 10px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+<div class="logo">Das Babu Traders</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div class="hero-content">
+
+<h1>Das Babu Traders</h1>
+
+<h2>Building Material Suppliers</h2>
+
+<p>
+We provide high-quality building materials for construction work including sand, cement, aggregate, dust, bricks, murum and more. Trusted supplier for homes, buildings, roads and construction projects.
+</p>
+
+<div class="hero-buttons">
+<a href="tel:828948555" class="btn1">Call Now</a>
+
+<a href="https://wa.me/91828948555" class="btn2" target="_blank">WhatsApp</a>
+</div>
+
+</div>
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<h2 class="section-title">Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518889735218-3e3a03fd3128?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Rati / Sand</h3>
+<p>
+Premium quality construction sand used for building foundations, plastering, concrete mixing and all construction work.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Bhandara</h3>
+<p>
+Strong and durable material suitable for road work, construction base and heavy-duty civil projects.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Gitti</h3>
+<p>
+High-quality aggregate stones used in RCC work, road construction and concrete structures.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Bajri</h3>
+<p>
+Construction-grade bajri used for strong foundations and concrete mixing in all types of projects.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Dust</h3>
+<p>
+Fine crusher dust suitable for paver blocks, flooring base, filling and construction applications.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Churi</h3>
+<p>
+Best quality stone churi for road work, interlocking and strong construction support.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590086782792-42dd2350140d?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Ambuja Cement</h3>
+<p>
+Trusted Ambuja cement for durable and long-lasting construction work with excellent strength.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>UltraTech Cement</h3>
+<p>
+Premium UltraTech cement ideal for homes, commercial buildings and heavy construction projects.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Murum</h3>
+<p>
+Strong murum material suitable for land filling, road base and construction leveling work.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Ita / Bricks</h3>
+<p>
+High-quality bricks for strong wall construction and durable residential and commercial buildings.
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
+<div class="about-text">
+
+<h2>About Us</h2>
+
+<p>
+Das Babu Traders is a trusted building material supplier providing quality construction materials at affordable prices. We supply sand, aggregate, cement, dust, murum, bricks and all essential building materials for residential, commercial and road construction projects.
+</p>
+
+<br>
+
+<p>
+Our mission is to provide durable, reliable and high-quality materials with timely delivery and customer satisfaction. We are committed to supporting builders, contractors and homeowners with the best products and services.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p><strong>Das Babu Traders</strong></p>
+
+<p>Building Material Suppliers</p>
+
+<p>📞 828948555</p>
+
+<p>📞 7507514029</p>
+
+<p>
+💬 WhatsApp:
+<a href="https://wa.me/91828948555" target="_blank">
+Chat on WhatsApp
+</a>
+</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+© 2026 Das Babu Traders | All Rights Reserved
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/91828948555" class="whatsapp" target="_blank">
+☎
+</a>
+
+</body>
+</html>
