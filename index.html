@@ -607,6 +607,79 @@ font-size:28px;
 }
 
   }
+  /* LOCATION SECTION */
+
+.location-section{
+background:#fff;
+padding:100px 5%;
+}
+
+.location-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+align-items:center;
+}
+
+.location-box{
+background:#f8f8f8;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.location-box h3{
+font-size:30px;
+margin-bottom:20px;
+color:#111;
+}
+
+.location-box p{
+font-size:17px;
+line-height:1.8;
+color:#555;
+margin-bottom:15px;
+}
+
+.location-btn{
+display:inline-block;
+margin-top:15px;
+padding:14px 28px;
+background:#ffcc00;
+color:#111;
+text-decoration:none;
+font-weight:700;
+border-radius:12px;
+transition:.3s;
+}
+
+.location-btn:hover{
+background:#111;
+color:white;
+}
+
+.map-box iframe{
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.location-section{
+padding:70px 20px;
+}
+
+.location-box{
+padding:30px;
+}
+
+.location-box h3{
+font-size:24px;
+}
+
+  }
 </style>
 </head>
 
@@ -882,7 +955,48 @@ Chat on WhatsApp
 </section>
 
 <!-- FOOTER -->
+<!-- LOCATION SECTION -->
 
+<section class="location-section" id="location">
+
+<h2 class="section-title">Our Location</h2>
+
+<div class="location-container">
+
+<div class="location-box">
+
+<h3>📍 Das Babu Traders</h3>
+
+<p>
+Building Material Suppliers
+</p>
+
+<p>
+Visit our shop for all types of construction and building materials including sand, cement, bajri, bricks, murum and more.
+</p>
+
+<a href="https://maps.app.goo.gl/HkH7psCth5ju27G26" target="_blank" class="location-btn">
+Open in Google Maps
+</a>
+
+</div>
+
+<div class="map-box">
+
+<iframe
+src="https://maps.google.com/maps?q=Das%20Babu%20Traders&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
 <footer>
 
 © 2026 Das Babu Traders | All Rights Reserved
