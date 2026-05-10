@@ -8,7 +8,11 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+
+
+
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -17,16 +21,22 @@ scroll-behavior:smooth;
 font-family:'Poppins',sans-serif;
 }
 
+html{
+overflow-x:hidden;
+}
+
 body{
 background:#f5f7fb;
 color:#222;
+overflow-x:hidden;
+width:100%;
 }
 
 /* HEADER */
 
 header{
 background:linear-gradient(135deg,#ffcc00,#f4a300);
-padding:18px 8%;
+padding:18px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -34,20 +44,31 @@ position:sticky;
 top:0;
 z-index:1000;
 box-shadow:0 4px 15px rgba(0,0,0,0.1);
+flex-wrap:wrap;
 }
 
 .logo{
-font-size:32px;
+font-size:28px;
 font-weight:800;
 color:#111;
+white-space:nowrap;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:15px;
 }
 
 nav a{
 text-decoration:none;
-margin-left:25px;
 font-weight:600;
 color:#111;
 transition:.3s;
+margin:0;
+white-space:nowrap;
 }
 
 nav a:hover{
@@ -61,7 +82,7 @@ min-height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:60px 8%;
+padding:60px 5%;
 background:
 linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop');
@@ -126,7 +147,7 @@ color:#111;
 /* SECTION */
 
 section{
-padding:80px 8%;
+padding:80px 5%;
 }
 
 .section-title{
@@ -282,7 +303,28 @@ transition:.3s;
 transform:scale(1.1);
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:15px 4%;
+}
+
+.logo{
+font-size:24px;
+margin-bottom:10px;
+text-align:center;
+}
+
+nav{
+gap:10px;
+}
+
+nav a{
+font-size:14px;
+}
 
 .hero-content h1{
 font-size:38px;
@@ -296,19 +338,20 @@ font-size:22px;
 font-size:32px;
 }
 
-header{
-flex-direction:column;
+section{
+padding:70px 5%;
 }
 
-nav{
-margin-top:10px;
+.card img{
+height:220px;
 }
 
-nav a{
-margin:0 10px;
+.gallery img{
+height:220px;
 }
 
 }
+
 </style>
 </head>
 
