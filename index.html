@@ -680,6 +680,97 @@ font-size:24px;
 }
 
   }
+  /* WHOLESALE SECTION */
+
+.wholesale-section{
+padding:100px 5%;
+background:#fff;
+}
+
+.wholesale-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.wholesale-gallery{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.wholesale-gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:.4s;
+}
+
+.wholesale-gallery img:hover{
+transform:scale(1.05);
+}
+
+.wholesale-tag{
+display:inline-block;
+background:#ffcc00;
+padding:10px 20px;
+border-radius:50px;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.wholesale-content h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.wholesale-content p{
+font-size:16px;
+line-height:1.9;
+color:#555;
+margin-bottom:25px;
+}
+
+.wholesale-btn{
+display:inline-block;
+padding:14px 30px;
+background:#ffcc00;
+color:#111;
+text-decoration:none;
+font-weight:700;
+border-radius:12px;
+transition:.3s;
+}
+
+.wholesale-btn:hover{
+background:#111;
+color:white;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.wholesale-gallery{
+grid-template-columns:1fr;
+}
+
+.wholesale-gallery img{
+height:240px;
+}
+
+.wholesale-content h2{
+font-size:30px;
+}
+
+.wholesale-section{
+padding:70px 20px;
+}
+
+  }
 </style>
 </head>
 
@@ -911,7 +1002,43 @@ Our mission is to provide durable products, fast delivery and complete customer 
 </div>
 
 </div>
+<!-- BHANDARA RATI WHOLESALE SECTION -->
 
+<section class="wholesale-section">
+
+<h2 class="section-title">Bhandara Rati Wholesale</h2>
+
+<div class="wholesale-container">
+
+<div class="wholesale-gallery">
+
+<img src="rati1.jpg" alt="">
+<img src="rati2.jpg" alt="">
+<img src="rati3.jpg" alt="">
+
+</div>
+
+<div class="wholesale-content">
+
+<span class="wholesale-tag">
+Wholesale Supplier
+</span>
+
+<h2>Bhandara Rati at Wholesale Rate</h2>
+
+<p>
+Das Babu Traders provides premium quality Bhandara Rati at affordable wholesale prices for house construction, road work and commercial projects. Bulk quantity available with fast delivery service.
+</p>
+
+<a href="https://wa.me/917507514029?text=Hello%20I%20want%20Bhandara%20Rati" class="wholesale-btn" target="_blank">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+</section>
 </section>
 
 <!-- GALLERY -->
